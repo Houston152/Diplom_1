@@ -78,9 +78,4 @@ class TestBurger(unittest.TestCase):
             'Price: 4976'
         )
 
-        print("Receipt:")
-        print(receipt.strip())
-        print("Expected Receipt:")
-        print(expected_receipt.strip())
-
         assert receipt.strip() == expected_receipt.strip(), 'Чек сформирован неправильно'
